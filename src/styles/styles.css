@@ -1,0 +1,30 @@
+:root{
+
+    --azul-oscuro: rgb(13,32,58);
+    --azul-gris: #43485e;
+    --naranja-oscuro: #a15d48;
+    --naranja: #dd4d2c;
+    --naranja-amarillo: #f58a1b;
+
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after { 
+    box-sizing: inherit; 
+}
+
+body{
+    font-family: 'Krub', sans-serif;
+}
+
+header{
+    background-color: var(--azul-gris);
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    color: var(--naranja-oscuro);
+}
