@@ -1,30 +1,123 @@
 :root{
 
-    --azul-oscuro: rgb(13,32,58);
+    --azul-oscuro: #142157;
     --azul-gris: #43485e;
     --naranja-oscuro: #a15d48;
     --naranja: #dd4d2c;
     --naranja-amarillo: #f58a1b;
+    --blanco: #ffff;
+    --verde-oscuro: #063254;
+    --azul-oscuro-luminoso: #014ba0;
+    --azul-claro: #107acc
 
 }
 
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    padding: 0;
 }
 *, *:before, *:after { 
     box-sizing: inherit; 
 }
 
 body{
+    font-size: 16px;/* Para que podamos usar 1em = 10px */
     font-family: 'Krub', sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to top, var(--azul-claro) 0%, var(--azul-oscuro) 100%); /*degradado hacia arriba*/
+    color: var(--blanco);
+}
+/* Para centrar el contenido*/
+.contenedor {
+    max-width: 120rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
 }
 
 header{
-    background-color: var(--azul-gris);
+    background-color: var(--azul-oscuro);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
 }
 h1{
-    color: var(--naranja-oscuro);
+    color: var(--blanco);
+    font-size: 2.8rem;
+}
+
+
+.nombre{
+    padding-left: 2rem;
+}
+.navegacion-principal{
+    padding-right: 2rem;
+    
+}
+.links{
+
+    margin-right: 1rem;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.5rem;
+
+}
+.links:last-child {
+    margin: 0;
+}
+
+.presentacion{
+    background-color: var(--azul-oscuro-luminoso);
+    min-height: 720px;
+    
+}
+.presentacion h2,
+.presentacion h3{
+    margin: 0;
+    padding: 3rem;
+    font-family: 'Square Peg', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.presentacion h2 {
+    font-size: 10rem;
+    padding-top: 15rem;
+}
+.presentacion h3 {
+    font-size: 5rem;
+}
+
+.aboutMe{
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 3rem;
+    background-color: var(--blanco);
+    min-height: 790px;
+    text-align: center;
+}
+
+.foto{
+
+    height: 50rem;
+
+}
+.texto-sobreMi {
+    margin-top: 5rem;
+    color: var(--verde-oscuro);
+    font-size: 2rem;
+}
+
+.portfolio{
+    
+}
+
+.contacto{
+
+    
 }

@@ -6,44 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Israel Hernandez</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet"> 
     
 </head>
 <body>
 
-    <header>
-        <h1 class="Nombre">Israel</h1>
+    <header >
+        <h1 class="nombre">Israel</h1>
 
         <nav class="navegacion-principal">
             <ul>
-                <a href="#">Inicio</a>
-                <a href="index.html#sobreMi">Sobre mi</a>
-                <a href="index.html#portafolio">Portfolio</a>
-                <a href="index.html#contacto">Contacto</a>
+                <a class="links" href="#">Inicio</a>
+                <a class="links" href="index.html#sobreMi">Sobre mi</a>
+                <a class="links" href="index.html#proyectos">Proyectos</a>
+                <a class="links" href="index.html#tecnologias">Tecnologias</a>
+                <a class="links" href="index.html#contacto">Contacto</a>
             </ul>
         </nav>
     </header>
-    
 
-    <main>
-        <section id="sobreMi">
+    <section class="presentacion">
+        <h2>Israel Hernandez Dorantes</h2>
+        <h3>Desarrollador de Software</h3>
+    </section>
+    
+    <section id="sobreMi" class="aboutMe">
+        <img class="foto" src="img/ImagenRepuesto.png" alt="foto mia">
+        
+        <div class="texto-sobreMi">
             <h2>About me:</h2>
             <p>Hi! My name is Israel, I'm a Science Computer student from the National Autonomous University of Mexico (UNAM). I'm 20 years old </p>
+        </div>
+    </section>
+
+    <main>
+
+        <section id="proyectos" class="portfolio">
+            <div class="contenedor">
+                <h2>Proyectos</h2>
+
+                <div>
+                    <h3>Calculadora en Java</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellat iure deserunt cumque est optio officia aliquam exercitationem, nostrum esse. Magnam obcaecati quidem mollitia libero consequuntur ab earum facilis natus?</p>
+                </div>
+            </div>
+
         </section>
 
-        <section id="portafolio">
-            <h2>Proyectos</h2>
+    </main>
 
-        </section>
+    <section id="tecnologias" class="tecnologias">
+        <div class="contenedor">
+            <h2>Tecnologias</h2>
 
-        <section id="contacto">
+            <div class="componentes">
+                <div class="componente">
+                    <img src="img/logoHTML.png" alt="imagen html">
+                </div>
+                <div class="componente">
+                    <img src="img/css.png" alt="imagen css">
+                </div>
+                <div class="componente">
+                    <img src="img/java.png" alt="imagen java">
+                </div>
+                <div class="componente">
+                    <img src="img/cpp.svg" alt="imagen cpp">
+                </div>
+                <div class="componente">
+                    <img src="img/git.png" alt="imagen git">
+                </div>
+                <div class="componente">
+                    <img src="img/github.png" alt="imagen github">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <section id="contacto" class="contacto">
+        <div class="contenedor">
             <h2>Contacto</h2>
             <p><span class="contacto_labels">Correo: </span> hdisra318@ciencias.unam.mx</p>
             <p><span class="contacto_labels">GitHub: </span>hdisra318</p>
             <p><span class="contacto_labels">Redes sociales: </span> Israel Hernadez LOGOS</p>
-        </section>
-
-    </main>
-    
+        </div>
+    </section>
 
 </body>
 </html>
