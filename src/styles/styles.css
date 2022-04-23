@@ -8,7 +8,7 @@
     --blanco: #ffff;
     --verde-oscuro: #063254;
     --azul-oscuro-luminoso: #014ba0;
-    --azul-claro: #107acc
+    --azul-claro: #107acc;
 
 }
 
@@ -48,6 +48,9 @@ header{
 h1{
     color: var(--blanco);
     font-size: 2.8rem;
+}
+p{
+    margin: 0;
 }
 
 
@@ -117,7 +120,32 @@ h1{
     
 }
 
+.componentes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.componente img {
+    height: 10rem;
+}
+
+/* Contacto */
 .contacto{
 
+    padding: 3rem;
     
+}
+
+.bordeContacto {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--azul-oscuro);
+    padding: 1rem;
+}
+.bordeContacto p {
+    margin: 2rem;
+}
+.contacto_labels {
+    font-weight: bold;
 }
